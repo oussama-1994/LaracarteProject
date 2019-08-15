@@ -9,4 +9,12 @@ function title_set($title){
         return $title .' | '.$base_title;
     }
 }}
+
+
+
+if(! function_exists('active_route_set')){
+    function active_route_set($route){
+        return Route::is($route) ? 'active' : '';
+    }
+}
 ?>

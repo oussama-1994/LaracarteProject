@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mr-auto">
 
-            <li class="nav-item">
+            <li class="{{active_route_set('home')}}">
                 <a class="nav-link" href="{{route('home')}}">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="{{active_route_set('about')}}">
                 <a class="nav-link" href="{{route('about')}}">About</a>
             </li><li class="nav-item">
                 <a class="nav-link" href="#">Artisans</a>
