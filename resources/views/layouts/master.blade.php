@@ -1,7 +1,12 @@
 <html>
 <head>
     <title>
-        Laracarte
+        {{--
+        {{isset($title) ? $title . '|' : '' }} Laracarte **** if title concat | , else ' ' ***
+        On faire ça ou bien par helpers au dessous
+        --}}
+
+        {{title_set($title ?? '')}} {{-- On appel fct helper title_set avec $title si existe ou ' '--}}
     </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 

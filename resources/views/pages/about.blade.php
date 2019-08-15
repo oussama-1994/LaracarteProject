@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master',['title'=>'about'])
 @section('content')
 
 
@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <p>Feel free to help to improve the <a target="_blank" href="https://github.com/mercuryseries/laracarte">source code</a>.</p>
+    <p>Feel free to help to improve the <a target="_blank" href="https://github.com/oussama-1994/LaracarteProject">source code</a>.</p>
 
     <hr>
 
