@@ -28,8 +28,8 @@
                     <a class="dropdown-item" href="#">Larachats</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+            <li class="{{active_route_set('contact')}}">
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
             </li>
 
         </ul>
