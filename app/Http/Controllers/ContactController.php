@@ -29,7 +29,7 @@ class ContactController extends Controller
         //$mailble=new ContactMail($request->name,$request->email,$request->msg);
         $mailble=new ContactMail($message);
 
-        Mail::to(config('laracastemail.var_mail'))->send($mailble);
+        Mail::to(config('laracastemail.var_mail'))->queue($mailble);
         //Flashy::success('Message', 'http://your-awesome-link.com');
         flashy()->success('Votre message est envoyé avec succes.');
 

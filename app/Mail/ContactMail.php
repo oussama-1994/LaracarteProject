@@ -34,6 +34,6 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.message.created');
+        return $this->markdown('emails.message.create');
     }
 }
